@@ -17,9 +17,6 @@ function App() {
           output
         </div>
       </div>
-      <div>
-        akcje - kopiuj, wklej np
-      </div>
     </div>
   );
 }
