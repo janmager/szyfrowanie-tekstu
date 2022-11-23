@@ -1,15 +1,3 @@
-.App{
-  background: darkslateblue;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.App > div{
-  padding: 25px;
-}
-
 h1, p{
   margin: 0;
 }
