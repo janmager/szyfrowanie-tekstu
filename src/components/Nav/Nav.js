@@ -21,10 +21,8 @@ const NavContainer = styled.div`
   div p{
     display: flex;
     flex-direction: row;
-  }
-
-  div b{
-    margin-left: 5px;
+    flex-wrap: wrap;
+    gap: 5px;
   }
 `
 
@@ -46,7 +44,7 @@ const AlgoInfoModal = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0,0,0,0.75);
+  background: rgba(0,0,0,0.9);
   box-sizing: border-box;
   position: absolute;
   top: 0;
@@ -80,14 +78,14 @@ const AlgoInfoModal = styled.div`
   }
 
   table td{
-    font-size: 22px;
+    font-size: 16px;
     text-align: center;
     font-weight: bold;
     width: 40px;
     height: 40px;
     border: 1px solid #FF7B9C;
     border-collapse: collapse;
-    padding: 10px;
+    padding: 4px;
   }
 `
 
@@ -151,11 +149,12 @@ const [ showInfo, setShowInfo ] = useState(false)
               <td>Z</td>
             </tr>
           </table>
+          <p>np. BILET = 21 42 13 51 44</p>
         </AlgoInfoModal>
         }
         <div>
             <h1>Kryptograficzne szyfrowanie tekstu</h1>
-            <p><b style={{marginLeft: '0px'}}>Jan Mager</b>, numer albumu: <b>120117</b>, grupa <b> K23</b></p>
+            <p><b>Jan Mager</b>, numer albumu: <b>120117</b>, grupa <b> K23</b></p>
         </div>
         <div>
             <p>Metoda szyfrowania: <b>SZACHOWNICA POLIBIUSZA</b> <InfoButton onClick={() => setShowInfo(true)}>ℹ️</InfoButton></p>
